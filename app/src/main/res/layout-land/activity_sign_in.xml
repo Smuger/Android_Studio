@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -8,45 +9,80 @@
         android:id="@+id/view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#000000" />
+        android:background="@color/colorBlack" />
 
     <ImageView
         android:id="@+id/imageView_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:contentDescription="@string/content_description_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/ic_launcher" />
 
-    <EditText
-        android:id="@+id/textInput_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/hint_email_field"
-        android:inputType="textEmailAddress" />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="251dp"
+        android:layout_height="186dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="8dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496">
 
-    <EditText
-        android:id="@+id/textInput_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/hint_password_field"
-        android:inputType="textPassword" />
+        <EditText
+            android:id="@+id/textInput_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="@string/hint_email_field"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toTopOf="@+id/textInput_password"
+            tools:layout_editor_absoluteX="349dp" />
 
-    <Button
-        android:id="@+id/button_sign_in"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#000000"
-        android:outlineAmbientShadowColor="#"
-        android:text="@string/button_sign_in"
-        android:contentDescription="@string/content_description_sing_in_button"/>
+        <EditText
+            android:id="@+id/textInput_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="@string/hint_password_field"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@+id/button_sign_in"
+            tools:layout_editor_absoluteX="349dp" />
 
-    <TextView
-        android:id="@+id/text_button_register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_register"
-        android:textColor="#ffffff"
-        android:contentDescription="@string/content_description_register_button"/>
+        <Button
+            android:id="@+id/button_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlack"
+            android:contentDescription="@string/content_description_sing_in_button"
+            android:text="@string/button_sign_in"
+            tools:layout_editor_absoluteX="413dp"
+            tools:layout_editor_absoluteY="215dp" />
+
+        <TextView
+            android:id="@+id/text_button_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_description_register_button"
+            android:gravity="center"
+            android:text="@string/button_register"
+            android:textColor="#ffffff"
+            tools:layout_editor_absoluteX="436dp"
+            tools:layout_editor_absoluteY="274dp" />
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

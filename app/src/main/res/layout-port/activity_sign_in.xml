@@ -8,7 +8,7 @@
         android:id="@+id/view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#000000" />
+        android:background="@color/colorBlack" />
 
     <ImageView
         android:id="@+id/imageView_logo"
@@ -37,8 +37,7 @@
         android:id="@+id/button_sign_in"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#000000"
-        android:outlineAmbientShadowColor="#"
+        android:background="@color/colorBlack"
         android:text="@string/button_sign_in"
         android:contentDescription="@string/content_description_sing_in_button"/>
 
