@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Milky_Way</string>
+    <string name="content_description_logo">Application logo</string>
+    <string name="content_description_email_field">Email input field</string>
+    <string name="content_description_password_filed">Password input field</string>
+    <string name="hint_email_field">Email</string>
+    <string name="hint_password_field">Email</string>
 </resources>
