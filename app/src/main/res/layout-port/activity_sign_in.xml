@@ -32,4 +32,21 @@
         android:ems="10"
         android:hint="@string/hint_password_field"
         android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:outlineAmbientShadowColor="#"
+        android:text="@string/button_sign_in"
+        android:contentDescription="@string/content_description_sing_in_button"/>
+
+    <TextView
+        android:id="@+id/text_button_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_register"
+        android:textColor="#ffffff"
+        android:contentDescription="@string/content_description_register_button"/>
 </android.support.constraint.ConstraintLayout>

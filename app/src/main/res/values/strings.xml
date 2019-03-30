@@ -3,6 +3,10 @@
     <string name="content_description_logo">Application logo</string>
     <string name="content_description_email_field">Email input field</string>
     <string name="content_description_password_filed">Password input field</string>
+    <string name="content_description_sing_in_button">Sign in button</string>
+    <string name="content_description_register_button">Register button</string>
     <string name="hint_email_field">Email</string>
     <string name="hint_password_field">Email</string>
+    <string name="button_sign_in">Sign in</string>
+    <string name="button_register">Register</string>
 </resources>
